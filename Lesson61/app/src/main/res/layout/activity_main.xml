@@ -6,12 +6,30 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edit_view_main"
+        android:id="@+id/first_name_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_centerVertical="true"
-        android:hint="@string/enter_text"/>
+        android:layout_above="@id/name_view"
+        android:hint="@string/enter_first_name"/>
+
+    <EditText
+        android:id="@+id/name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:hint="@string/enter_name"/>
+
+    <EditText
+        android:id="@+id/last_name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/name_view"
+        android:hint="@string/enter_last_name"/>
 
     <Button
         android:id="@+id/button_view_main"
@@ -19,7 +37,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/ok"
-        android:onClick="acceptInput"/>
+        android:text="Continue"/>
 
 </RelativeLayout>

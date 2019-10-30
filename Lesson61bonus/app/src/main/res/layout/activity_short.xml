@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OutputActivity">
+    tools:context=".ShortActivity">
 
     <TextView
         android:id="@+id/full_name_view"
@@ -11,15 +11,15 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:gravity="center"
-        android:text="@string/full_name"
+        android:text="Full name"
         android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/button_view_other"
+        android:id="@+id/button_view_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/pass_in_first_view"/>
+        android:text="Continue"/>
 
 </RelativeLayout>
